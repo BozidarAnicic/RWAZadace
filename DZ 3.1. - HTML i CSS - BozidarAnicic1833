@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BozidarAnicic1833/rr</title>
+
+    <style>
+        .logo {
+            background-color: rgb(111, 233, 241);
+            font-family: Arial, sans-serif;
+            width: 274px;
+            height: 213px;
+            float: left;
+
+
+        }
+
+        .navigacija {
+            background-color: red;
+            font-family: Arial, sans-serif;
+            padding-bottom: 900px;
+            padding-right: 144px;
+            padding-left: 40px;
+            margin-right: 1500px;
+            border: 2px solid yellow;
+            border-top: 0px;
+            text-align: center;
+            float: left;
+
+        }
+
+
+        .entitet {
+            background-color: red;
+            font-family: Arial, sans-serif;
+            width: 300px;
+            height: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: absolute;
+            left: 300px;
+            top: 5px;
+            margin: 40px;
+            text-align: center;
+            border: 4px solid purple;
+
+        }
+
+
+        .ispis {
+
+            background-color: #c72;
+            font-family: Arial, sans-serif;
+            float: right;
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            padding: 400px;
+            vertical-align: top;
+
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+
+<body bgcolor="#6FE9F1">
+
+
+    <div class="logo">
+        <img src="lop2.jpg" alt="Logo tvrtke" width="200" height="200" style="position: absolute;">
+    </div>
+    <div class="navigacija">
+        <h3>Navigacija</h3>
+        <p></p>
+    </div>
+
+    <div class="entitet">
+        <h2>Naziv entiteta ili dijela projekta</h2>
+    </div>
+    <div class="ispis">
+        <h2>Ispis/korisni sadrzaj, tablicni prikaz i sl.</h2>
+    </div>
+
+</body>
+
+</html>
