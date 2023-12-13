@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmeticka i geometrijska sredina</title>
+</head>
+
+<body>
+
+    <script>
+        // Funkcija za izračun aritmetičke sredine
+        function calculateArithmeticMean(numbers) {
+            const sum = numbers.reduce((acc, num) => acc + num, 0);
+            return sum / numbers.length;
+        }
+
+        // Funkcija za izračun geometrijske sredine
+        function calculateGeometricMean(numbers) {
+            const product = numbers.reduce((acc, num) => acc * num, 1);
+            return Math.pow(product, 1 / numbers.length);
+        }
+
+        // Funkcija koja se poziva nakon učitavanja stranice
+        function calculateMeans() {
+            // Unos brojeva kroz prompt dijalog
+            const inputString = prompt("Unesite brojeve odvojene zarezom (npr. 1, 4, 16):");
+
+            // Razdvajanje unesenog niza brojeva
+            const numbers = inputString.split(',').map(num => parseInt(num.trim(), 10));
+
+            // Izračunavanje aritmetičke i geometrijske sredine
+            const arithmeticMean = calculateArithmeticMean(numbers);
+            const geometricMean = calculateGeometricMean(numbers);
+
+            // Ispis rezultata u HTML dokumentu
+            document.body.innerHTML = `
+            <h2>Izračun sredina</h2>
+            <p>Uneseni brojevi: ${numbers.join(', ')}</p>
+            <p>Aritmetička sredina: ${arithmeticMean.toFixed(2)}</p>
+            <p>Geometrijska sredina: ${geometricMean.toFixed(2)}</p>
+        `;
+        }
+
+        // Poziv funkcije nakon učitavanja stranice
+        calculateMeans();
+    </script>
+
+</body>
+
+</html>
